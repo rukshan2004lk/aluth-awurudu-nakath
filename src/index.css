@@ -24,6 +24,21 @@ body {
   justify-content: center;
   align-items: flex-start;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('/bg.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.25; /* Low opacity festive background */
+  z-index: -1;
+  pointer-events: none;
 }
 
 #root {
