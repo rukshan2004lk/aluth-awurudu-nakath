@@ -11,6 +11,7 @@ import {
   Timer
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { Analytics } from '@vercel/analytics/react';
 import './index.css';
 
 const triggerFireworks = () => {
@@ -209,6 +210,7 @@ function App() {
         <p>Wishing you a prosperous Sinhala & Tamil New Year!</p>
         <p>@2026 Awurudu Nakath - Created by <a href="https://www.facebook.com/sandeesha.rukshan.3" target="_blank" rel="noreferrer" style={{color: 'var(--primary-gold)', textDecoration: 'none'}}>Sandeesha Rukshan</a></p>
       </footer>
+      <Analytics />
     </div>
   );
 }
